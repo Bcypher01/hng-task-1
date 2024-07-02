@@ -22,4 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const today = new Date().getDay();
   document.querySelector("[data-testid='currentDay']").textContent =
     days[today];
+
+  // Confirm image dimensions
+  const img = document.querySelector("[data-testid='slackProfilePicture']");
+  console.log(
+    `Image natural width: ${img.naturalWidth}, natural height: ${img.naturalHeight}`
+  );
 });
